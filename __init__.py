@@ -34,18 +34,24 @@ def slowprint_1(s):
      sys.stdout.flush()
      time.sleep(random.random() * 0.8)
 
+def slowprint_a(s):
+    for c in s + '\n':
+     sys.stdout.write(c)
+     sys.stdout.flush()
+     time.sleep(random.random() * 1)
+
 os.system('')
 title_console.print('''
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃                     [r]小生物旅行记[/r]                   ┃
-┃                                            [cyan]v1.0.0[/cyan]  ┃
-┠────────────────────────────────────────────────────┨
-┃               Screenwriter： [yellow]桑吉Sage[/yellow]              ┃
-┃                                                    ┃
-┃   Copyright [green]©[/green] [red]Nya-WSL[/red] 2022. [green]All rights reserved.[/green]   ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+[cyan]┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓[/]
+[cyan]┃[/]                     [r]小生物旅行记[/r]                   [cyan]┃[/]
+[cyan]┃                                            [cyan]v1.0.0[/cyan]  [cyan]┃[/]
+[cyan]┠────────────────────────────────────────────────────┨[/cyan]
+[cyan]┃[/]               [white]Screenwriter：[/][yellow]桑吉Sage[/yellow]               [cyan]┃[/]
+[cyan]┃[/]                                                    [cyan]┃[/]
+[cyan]┃[/]   Copyright [green]©[/green] [red]Nya-WSL[/red] 2022. [green]All rights reserved.[/green]   [cyan]┃[/]
+[cyan]┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛[/]
 ''', justify="center")
-start_console.print("[blue]按[bold red]回车[/bold red]开始游戏[/blue]", style="blink", justify="center")
+start_console.print("[cyan]按[bold red]回车[/bold red]开始游戏[/cyan]", style="blink", justify="center")
 input()
 os.system("cls")
 
@@ -105,3 +111,43 @@ if choose1 == 1:
     slowprint_text("""
 他的语气非常轻，仿佛是害怕吓到对方似的。
 但仅仅短短四个字，宛如压垮骆驼的最后一根稻草，让对面的金发红瞳资本家泪如雨下。""")
+    text_console.print("[blue]毕方[/]：", end="")
+    time.sleep(1)
+    slowprint_text("混蛋，你为什么来...!")
+    text_console.print("[blue]毕方[/]：", end="")
+    time.sleep(1)
+    slowprint_text("...混蛋，为什么你会找到啊！")
+    slowprint_text("""
+情感宛如涌出的泪水，无法压抑无法控制地随着重力坠落。
+“啪嗒”
+翻涌的内心，促使晨宝向对面奔去。""")
+    text_console.print("[blue]毕方[/]：", end="")
+    time.sleep(1)
+    slowprint_text("！停下，晨宝，六翼在看着...")
+    slowprint_text("""
+这样是不行的。
+这样是不能被允许的。
+晨宝不应该背叛六翼。
+那个每天在群里笑笑闹闹，给自己发红豆流汗脸的六翼。
+那个打出“狠狠地撅晨宝”之后，又会附上傲娇表情的六翼。
+那个在DD歌会用歌声唱出“gamer和晨宝相比，那我还是觉得晨宝刺激”的六翼。
+那个一直守望着自己，说着“晨宝，就算你被撅了，我还是爱你的”的六翼。
+大脑在大声尖叫停止，心脏中负罪感多到快要爆炸了。""")
+    slowprint_a("可是，可是——")
+    slowprint_text("""
+即便如此，晨宝飞奔的脚步也没有停止。
+即便如此，晨宝身体中的每一个细胞都在尖叫，都在呐喊：
+""")
+    print("晨宝", end="")
+    slowprint_a("好喜欢毕方。")
+    print()
+    text_console.print("[blue]晨宝[/]：", end="")
+    time.sleep(1)
+    slowprint_text("对不起，对不起，六翼...")
+    slowprint_text("""
+晨宝抱住了毕方。
+他们接吻了。""")
+    input("cg1")
+    slowprint_text("""
+晨宝和毕方深深吻住了对方。
+用仿佛明天世界就会毁灭一般的，仿佛这就是二人仅剩最后一秒般的热情亲吻对方。""")
