@@ -38,7 +38,7 @@ def slowprint_a(s):
     for c in s + '\n':
      sys.stdout.write(c)
      sys.stdout.flush()
-     time.sleep(random.random() * 1)
+     time.sleep(1)
 
 os.system('')
 title_console.print('''
@@ -110,7 +110,8 @@ if choose1 == 1:
     slowprint_text("毕方...别走。")
     slowprint_text("""
 他的语气非常轻，仿佛是害怕吓到对方似的。
-但仅仅短短四个字，宛如压垮骆驼的最后一根稻草，让对面的金发红瞳资本家泪如雨下。""")
+但仅仅短短四个字，宛如压垮骆驼的最后一根稻草，让对面的金发红瞳资本家泪如雨下。
+""")
     text_console.print("[blue]毕方[/]：", end="")
     time.sleep(1)
     slowprint_text("混蛋，你为什么来...!")
@@ -120,7 +121,8 @@ if choose1 == 1:
     slowprint_text("""
 情感宛如涌出的泪水，无法压抑无法控制地随着重力坠落。
 “啪嗒”
-翻涌的内心，促使晨宝向对面奔去。""")
+翻涌的内心，促使晨宝向对面奔去。
+""")
     text_console.print("[blue]毕方[/]：", end="")
     time.sleep(1)
     slowprint_text("！停下，晨宝，六翼在看着...")
@@ -132,8 +134,9 @@ if choose1 == 1:
 那个打出“狠狠地撅晨宝”之后，又会附上傲娇表情的六翼。
 那个在DD歌会用歌声唱出“gamer和晨宝相比，那我还是觉得晨宝刺激”的六翼。
 那个一直守望着自己，说着“晨宝，就算你被撅了，我还是爱你的”的六翼。
-大脑在大声尖叫停止，心脏中负罪感多到快要爆炸了。""")
-    slowprint_a("可是，可是——")
+大脑在大声尖叫停止，心脏中负罪感多到快要爆炸了。
+""")
+    slowprint_a("可是，可是")
     slowprint_text("""
 即便如此，晨宝飞奔的脚步也没有停止。
 即便如此，晨宝身体中的每一个细胞都在尖叫，都在呐喊：
