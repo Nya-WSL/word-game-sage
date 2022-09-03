@@ -1,9 +1,13 @@
 from rich.console import Console
+#from update import check_update
 from rich import print
+import webbrowser
 import random
 import sys
 import time
 import os
+
+#check_update()
 
 title_console = Console(color_system="windows")
 start_console = Console(color_system="windows")
@@ -46,6 +50,12 @@ def slowprint_end(s):
      sys.stdout.flush()
      time.sleep(2)
 
+def slowprint_end1(s):
+    for c in s + '\n':
+     sys.stdout.write(c)
+     sys.stdout.flush()
+     time.sleep(random.random() * 2)
+
 os.system('')
 title_console.print('''
 [cyan]┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓[/]
@@ -72,12 +82,10 @@ start_console.print("[cyan]按[bold red]回车[/bold red]开始游戏[/cyan]", s
 input()
 os.system("cls")
 
-slowprint_text("""
-很久很久以前，有一只谜之小生物。
+slowprint_text("""很久很久以前，有一只谜之小生物。
 为了躲避调查员的追杀，小生物使用了由好心的外星猫猫提供的修女身体。
 可是，此时的小生物并不理解人类这一物种。
-为了更好藏匿在人类社会之中，小生物开始了对人类的调查。
-""")
+为了更好藏匿在人类社会之中，小生物开始了对人类的调查。""")
 
 os.system("cls")
 time.sleep(1.5)
@@ -85,15 +93,18 @@ slowprint_1("......")
 time.sleep(1.5)
 os.system("cls")
 
-text_console.print("去哪里调查人类？", justify="center")
-print()
-time.sleep(0.5)
-choose_console.print("1. [cyan]机场[/cyan]", justify="center")
-choose_console.print("2. [green]公司[/green]", justify="center")
-choose_console.print("3. [red]菜市场[/red]", justify="center")
-print()
-time.sleep(1)
-choose1 = int(choose_console.input("[yellow]你的选择是：[/]"))
+def choose_main():
+    global choose1
+    text_console.print("去哪里调查人类？", justify="center")
+    print()
+    time.sleep(0.5)
+    choose_console.print("1. [cyan]机场[/cyan]", justify="center")
+    choose_console.print("2. [green]公司[/green]", justify="center")
+    choose_console.print("3. [red]菜市场[/red]", justify="center")
+    print()
+    time.sleep(1)
+    choose1 = int(choose_console.input("[yellow]你的选择是：[/]"))
+choose_main()
 if choose1 == 1:
     os.system("cls")
     text_console.print("机场", justify="center")
@@ -249,7 +260,7 @@ if choose1 == 1:
         os.system("cls")
         slowprint_text("""小生物大受感动。
 离开机场时，它暗自发誓，要成为一个能够守护男酮之悲恋的人。""")
-    if choose2 == 2:
+    elif choose2 == 2:
         os.system("cls")
         slowprint_text("""既然不甘心，既然痛苦。
 那就应当拿出行动，继续努力。
@@ -291,6 +302,7 @@ if choose1 == 1:
         os.system("cls")
         slowprint_text("""小生物大受感动。
 离开机场时，它暗自发誓，要成为一个能够守护男酮之执恋的人。""")
+choose_main()
 if choose1 == 2:
     os.system("cls")
     text_console.print("公司", justify="center")
@@ -450,7 +462,7 @@ if choose1 == 2:
         slowprint_text("""
 收到邀请的小生物大受感动。
 离开公司时，它暗自发誓，要成为一个能够充满打工之力的人""")
-    if choose3 == 2:
+    elif choose3 == 2:
         os.system("cls")
     slowprint_text("""
 正义理应得到伸张。
@@ -479,6 +491,7 @@ if choose1 == 2:
 收到邀请的小生物大受感动。
 离开公司时，它暗自发誓，要成为一个能够守护打工人的人""")
 
+choose_main()
 if choose1 == 3:
     os.system("cls")
     text_console.print("菜市场", justify="center")
@@ -601,7 +614,7 @@ if choose1 == 3:
 小生物想着这一点，露出了笑容。
 离开菜市场时，小生物暗暗发誓。
 它一定要成为一个守护规则的人""")
-    if choose4 == 2:
+    elif choose4 == 2:
         os.system("cls")
         slowprint_text("""
 即使是人和鱼的感情也是伟大的。
@@ -639,7 +652,7 @@ if choose1 == 3:
 青年捧着王靳鱼，开心地离开了。
 小生物大受感动。
 离开菜市场时，它暗自发誓，要成为一个能够守护超越人类之恋的人。""")
-elif choose1 != 1 or 2 or 3:
+if choose1 != 1 or 2 or 3:
     text_console.print("[blod red]参数错误，请按下回车键后重新选择", justify="center")
     os.system("cls")
     text_console.print("去哪里调查人类？", justify="center")
@@ -696,7 +709,7 @@ if choose2 == 1 and choose3 == 1 and choose4 == 1:
     slowprint_end("""Thank you for playing.
 Normal Ending: 好人修女""")
 
-if choose2 == 2 and choose3 == 2 and choose4 == 2:
+elif choose2 == 2 and choose3 == 2 and choose4 == 2:
     slowprint_text("""
 ——要成为一个能够守护男酮之执恋的人。
 ——要成为一个能够守护打工人的人。
@@ -729,3 +742,33 @@ else:
     time.sleep(5)
     slowprint_end("""Thank you for playing.
 Bad Ending: 不知前路为何的修女""")
+
+slowprint_end("""
+小生物旅行记v1.0.0
+——————
+感谢游玩！
+制作组：Nya-WSL
+编剧：桑吉Sage
+cg：冰蓝
+友情出演：
+晨宝 冰蓝
+毕方 六翼
+游魂 桶鸟
+027 猫店长
+雨林 殷红
+江江 露鸢
+红白 袭秋
+——————
+Thank you for playing.
+希望各位玩家的每一天都是Happy Ending.
+""")
+
+#花絮
+time.sleep(5)
+slowprint_a("......")
+choose_end = choose_console.input("[yellow]是否查看花絮？(1/0)[/]")
+if choose_end == 1:
+    url = "https://nya-wsl.com/word-game/sage/tidbits"
+    webbrowser.open(url)
+else:
+    sys.exit()
