@@ -116,9 +116,10 @@ Thank you for playing.
 #花絮
     time.sleep(5)
     slowprint_a("......")
-    choose_end = choose_console.input("[yellow]是否查看花絮？(1/0)[/]")
-    if choose_end == 1:
-        url = "https://nya-wsl.com/word-game/sage/tidbits"
-        webbrowser.open(url)
-    else:
+    choose_end = int(choose_console.input("[yellow]是否查看花絮？(y/n)[/]"))
+    if choose_end == "n" or choose_end == "N":
+        input("感谢游玩")
         sys.exit()
+    else:
+        url = "https://nya-wsl.com/word-game/sage/tidbits"
+        webbrowser.open(url, new=0, autoraise=True)

@@ -8,6 +8,7 @@ from src.page3 import Page3
 from rich import print
 import time
 import os
+
 #check_update()
 
 title_console = Console(color_system="windows")
