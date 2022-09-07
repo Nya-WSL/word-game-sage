@@ -30,7 +30,7 @@ choose_console = Console(color_system="windows")
 title_console.print('''
 [cyan]┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓[/]
 [cyan]┃[/]                     [r]小生物旅行记[/r]                   [cyan]┃[/]
-[cyan]┃                                            [cyan]v1.0.0[/cyan]  [cyan]┃[/]
+[cyan]┃                                            [cyan]v1.0.1[/cyan]  [cyan]┃[/]
 [cyan]┠────────────────────────────────────────────────────┨[/cyan]
 [cyan]┃[/]               [white]Screenwriter：[/][yellow]桑吉Sage[/yellow]               [cyan]┃[/]
 [cyan]┃[/]                                                    [cyan]┃[/]

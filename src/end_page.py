@@ -94,7 +94,7 @@ Good Ending: 变革的修女""")
 Bad Ending: 不知前路为何的修女""")
 
     slowprint_end("""
-小生物旅行记v1.0.0
+小生物旅行记v1.0.1
 ——————
 感谢游玩！
 制作组：Nya-WSL
@@ -116,7 +116,7 @@ Thank you for playing.
 #花絮
     time.sleep(5)
     slowprint_a("......")
-    choose_end = int(choose_console.input("[yellow]是否查看花絮？(y/n)[/]"))
+    choose_end = choose_console.input("[yellow]是否查看花絮？(y/n)[/]")
     if choose_end == "n" or choose_end == "N":
         input("感谢游玩")
         sys.exit()
