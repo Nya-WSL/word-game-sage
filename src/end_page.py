@@ -94,7 +94,7 @@ Good Ending: 变革的修女""")
 Bad Ending: 不知前路为何的修女""")
 
     slowprint_end("""
-小生物旅行记v1.0.1
+小生物旅行记v1.0.2
 ——————
 感谢游玩！
 制作组：Nya-WSL
