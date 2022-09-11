@@ -1,10 +1,10 @@
-from src.slowprint import slowprint_1, slowprint_text, slowprint_title
+from src.windows.slowprint import slowprint_1, slowprint_text, slowprint_title
 from rich.console import Console
 #from update import check_update
-from src.end_page import EndPage
-from src.page1 import Page1
-from src.page2 import Page2
-from src.page3 import Page3
+from src.windows.end_page import EndPage
+from src.windows.page1 import Page1
+from src.windows.page2 import Page2
+from src.windows.page3 import Page3
 from flask import Flask
 from rich import print
 import time
@@ -30,7 +30,7 @@ choose_console = Console(color_system="windows")
 title_console.print('''
 [cyan]┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓[/]
 [cyan]┃[/]                     [r]小生物旅行记[/r]                   [cyan]┃[/]
-[cyan]┃                                            [cyan]v1.0.2[/cyan]  [cyan]┃[/]
+[cyan]┃                                            [cyan]v1.0.3[/cyan]  [cyan]┃[/]
 [cyan]┠────────────────────────────────────────────────────┨[/cyan]
 [cyan]┃[/]               [white]Screenwriter：[/][yellow]桑吉Sage[/yellow]               [cyan]┃[/]
 [cyan]┃[/]                                                    [cyan]┃[/]

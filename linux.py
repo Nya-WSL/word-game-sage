@@ -1,10 +1,10 @@
-from src.slowprint import slowprint_1, slowprint_text, slowprint_title
+from src.linux.slowprint import slowprint_1, slowprint_text, slowprint_title
 from rich.console import Console
 #from update import check_update
-from src.end_page import EndPage
-from src.page1 import Page1
-from src.page2 import Page2
-from src.page3 import Page3
+from src.linux.end_page import EndPage
+from src.linux.page1 import Page1
+from src.linux.page2 import Page2
+from src.linux.page3 import Page3
 from flask import Flask
 from rich import print
 import time
