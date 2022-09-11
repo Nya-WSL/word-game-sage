@@ -1,1 +1,1 @@
-pyinstaller -F -i icon.ico main.py -p D:\GitHub\word-game-sage\src\page1.py -p D:\GitHub\word-game-sage\src\page2.py -p D:\GitHub\word-game-sage\src\page3.py -p D:\GitHub\word-game-sage\src\slowprint.py -p D:\GitHub\word-game-sage\src\end_page.py
+pyinstaller -F -i icon.ico windows.py -p D:\GitHub\word-game-sage\src\page1.py -p D:\GitHub\word-game-sage\src\page2.py -p D:\GitHub\word-game-sage\src\page3.py -p D:\GitHub\word-game-sage\src\slowprint.py -p D:\GitHub\word-game-sage\src\end_page.py
