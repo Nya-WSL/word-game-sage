@@ -1,4 +1,4 @@
-from slowprint import slowprint_a, slowprint_title, slowprint_text, slowprint_end
+from .slowprint import slowprint_a, slowprint_title, slowprint_text, slowprint_end
 from rich.console import Console
 from rich import print
 from . import page1

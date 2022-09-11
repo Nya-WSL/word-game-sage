@@ -1,4 +1,4 @@
-from slowprint import slowprint_a, slowprint_text, slowprint_1
+from .slowprint import slowprint_a, slowprint_text, slowprint_1
 from rich.console import Console
 import time
 import os
