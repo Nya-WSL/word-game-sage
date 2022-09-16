@@ -1,6 +1,6 @@
 from src.windows.slowprint import slowprint_1, slowprint_text, slowprint_title
 from rich.console import Console
-#from update import check_update
+from src.windows.update import check_update
 from src.windows.end_page import EndPage
 from src.windows.page1 import Page1
 from src.windows.page2 import Page2
@@ -10,7 +10,7 @@ from rich import print
 import time
 import os
 
-#check_update()
+check_update()
 
 # app = Flask(__name__)
 

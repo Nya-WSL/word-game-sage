@@ -9,10 +9,10 @@ text_console = Console(color_system="windows")
 choose_console = Console(color_system="windows")
 
 def Page3():
-    os.system("cls")
+    os.system("clear")
     text_console.print("菜市场", justify="center")
     time.sleep(3)
-    os.system("cls")
+    os.system("clear")
     slowprint_text("""
 小生物来到了一座菜市场。
 正所谓人生在世，吃喝二字，要了解人类，就应该从人类的吃喝学起。
@@ -111,7 +111,7 @@ def Page3():
     global choose4
     choose4 = int(choose_console.input("[yellow]你的选择是：[/]"))
     if choose4 == 1:
-        os.system("cls")
+        os.system("clear")
         slowprint_text("""
 先来后到，遵守规则。
 把这条鱼让给先来的人吧，况且他家人生日这样的时机，要是有了这样的好食材，可谓锦上添花。
@@ -132,7 +132,7 @@ def Page3():
 离开菜市场时，小生物暗暗发誓。
 它一定要成为一个守护规则的人""")
     elif choose4 == 2:
-        os.system("cls")
+        os.system("clear")
         slowprint_text("""
 即使是人和鱼的感情也是伟大的。
 这份爱情虽然不为世人所容，但是它的真挚却无可否认。

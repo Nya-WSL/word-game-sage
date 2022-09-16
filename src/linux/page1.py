@@ -9,10 +9,10 @@ text_console = Console(color_system="windows")
 choose_console = Console(color_system="windows")
 
 def Page1():
-    os.system("cls")
+    os.system("clear")
     text_console.print("机场", justify="center")
     time.sleep(3)
-    os.system("cls")
+    os.system("clear")
     slowprint_text("""
 小生物来到了一处机场。
 据猫猫说，这样的交通要道是人类聚集之地。
@@ -120,7 +120,7 @@ def Page1():
     global choose2
     choose2 = int(choose_console.input("[yellow]你的选择是：[/]"))
     if choose2 == 1:
-        os.system("cls")
+        os.system("clear")
         slowprint_text("""爱情想必是强求不来的东西。
 或许放弃对于双方来说才是最好的选择。
 """)
@@ -158,14 +158,14 @@ def Page1():
         time.sleep(1)
         slowprint_text("你真是个好人。")
         time.sleep(3)
-        os.system("cls")
+        os.system("clear")
         slowprint_text("【获得道具：六翼的好人卡*1】")
         time.sleep(1.5)
-        os.system("cls")
+        os.system("clear")
         slowprint_text("""小生物大受感动。
 离开机场时，它暗自发誓，要成为一个能够守护男酮之悲恋的人。""")
     elif choose2 == 2:
-        os.system("cls")
+        os.system("clear")
         slowprint_text("""既然不甘心，既然痛苦。
 那就应当拿出行动，继续努力。
 """)
@@ -200,9 +200,9 @@ def Page1():
         time.sleep(1)
         slowprint_text("我一定要撅到晨宝！")
         time.sleep(3)
-        os.system("cls")
+        os.system("clear")
         slowprint_text("【获得道具：南桐六翼的认可*1】")
         time.sleep(1.5)
-        os.system("cls")
+        os.system("clear")
         slowprint_text("""小生物大受感动。
 离开机场时，它暗自发誓，要成为一个能够守护男酮之执恋的人。""")

@@ -15,18 +15,18 @@ text_console = Console(color_system="windows")
 choose_console = Console(color_system="windows")
 
 def EndPage():
-    os.system("cls")
+    os.system("clear")
     slowprint_a("......")
-    os.system("cls")
+    os.system("clear")
     slowprint_title("""  
  __             _ 
 |_ __  _| o __ (_|
 |__| |(_| | | |__|""")
     time.sleep(5)
-    os.system("cls")
+    os.system("clear")
     start_console.print("[cyan]按[bold red]回车[/bold red]进入结局戏[/cyan]", style="blink", justify="center")
     input()
-    os.system("cls")
+    os.system("clear")
     slowprint_text("""
 太阳落山了，小生物的人类调查到此结束。
 是时候检查自己在本次调查中的收获了。
