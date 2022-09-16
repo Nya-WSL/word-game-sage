@@ -9,10 +9,10 @@ text_console = Console(color_system="windows")
 choose_console = Console(color_system="windows")
 
 def Page2():
-    os.system("cls")
+    os.system("clear")
     text_console.print("公司", justify="center")
     time.sleep(3)
-    os.system("cls")
+    os.system("clear")
     slowprint_text("""
 小生物来到了一处公司。
 据说这里是人类用劳动力换取报酬的地方，这对小生物而言是一个全新的概念。
@@ -131,7 +131,7 @@ def Page2():
     global choose3
     choose3 = int(choose_console.input("[yellow]你的选择是：[/]"))
     if choose3 == 1:
-        os.system("cls")
+        os.system("clear")
         slowprint_text("""
 即便是邪恶的资本家，也拥有追求爱情的权力。
 即使是罪恶的资本家，在感到悲伤时也应被温柔以待
@@ -169,7 +169,7 @@ def Page2():
 收到邀请的小生物大受感动。
 离开公司时，它暗自发誓，要成为一个能够充满打工之力的人""")
     elif choose3 == 2:
-        os.system("cls")
+        os.system("clear")
         slowprint_text("""
 正义理应得到伸张。
 被压迫的打工人们渴望自由，渴望处刑为他们带来痛苦的源头。

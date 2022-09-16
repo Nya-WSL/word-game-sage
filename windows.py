@@ -1,6 +1,6 @@
 from src.windows.slowprint import slowprint_1, slowprint_text, slowprint_title
 from rich.console import Console
-#from update import check_update
+from src.windows.update import check_update
 from src.windows.end_page import EndPage
 from src.windows.page1 import Page1
 from src.windows.page2 import Page2
@@ -10,7 +10,7 @@ from rich import print
 import time
 import os
 
-#check_update()
+check_update()
 
 # app = Flask(__name__)
 
@@ -35,7 +35,7 @@ title_console.print('''
 [cyan]┃[/]               [white]Screenwriter：[/][yellow]桑吉Sage[/yellow]               [cyan]┃[/]
 [cyan]┃[/]                                                    [cyan]┃[/]
 [cyan]┃[/]   Copyright [green]©[/green] [red]Nya-WSL[/red] 2022. [green]All rights reserved.[/green]   [cyan]┃[/]
-[cyan]┃[/]    https://nya-wsl.com/6723413/game/Sage_Travels   [cyan]┃[/]
+[cyan]┃[/]   https://nya-wsl.com/6723413/game/Sage_Travels    [cyan]┃[/]
 [cyan]┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛[/]
 ''', justify="center")
 start_console.print("[cyan]按[bold red]回车[/bold red]开始游戏[/cyan]", style="blink", justify="center")
