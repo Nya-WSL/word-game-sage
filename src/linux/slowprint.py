@@ -36,7 +36,7 @@ def slowprint_end(s):
     for c in s + '\n':
      sys.stdout.write(c)
      sys.stdout.flush()
-     time.sleep(0.4)
+     time.sleep(1)
 
 def slowprint_end1(s):
     for c in s + '\n':
