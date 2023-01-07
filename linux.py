@@ -5,7 +5,7 @@ from src.linux.end_page import EndPage
 from src.linux.page1 import Page1
 from src.linux.page2 import Page2
 from src.linux.page3 import Page3
-from flask import Flask
+#from flask import Flask
 from rich import print
 import time
 import os
